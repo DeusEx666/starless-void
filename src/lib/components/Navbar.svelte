@@ -95,7 +95,6 @@ nav {
 .navbar {
  position: fixed;
    top: 0;
-   height: 70px;
    width: 100%;
    background: black;
    border-bottom: 1px solid #8b0000;
@@ -126,7 +125,6 @@ nav {
 
 /* MENU */
 .nav-links {
-  top: 70px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
