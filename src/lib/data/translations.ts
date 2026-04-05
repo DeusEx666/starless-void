@@ -9,7 +9,7 @@ export const translations = {
       media: "Media"
     },
     bio: {
-      text: "Starless Void to zespół black/doom metalowy ze Śląska..."
+      text: ""
     },
     contact: {
       title: "Kontakt",
