@@ -93,6 +93,8 @@ nav {
 }
 
 .navbar {
+z-index:3001;
+height: 70px;
  position: fixed;
    top: 0;
    width: 100%;
@@ -125,6 +127,8 @@ nav {
 
 /* MENU */
 .nav-links {
+  z-index: 3000;
+  top: 70px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -211,6 +215,7 @@ button {
 
 /* burger hidden desktop */
 .burger {
+  z-index: 3001;
   display: none;
   font-size: 20px;
   background: none;
