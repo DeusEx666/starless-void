@@ -2,79 +2,67 @@
   import { page } from '$app/stores';
   import { lang } from '$lib/stores/languageStore';
   import { translations } from '$lib/data/translations';
-
+  let open = false;
   $: t = translations[$lang];
 </script>
- let open = false;
+ 
 
 
 <nav class="navbar">
-<button class="burger" on:click={() => open = !open}>
-  ☰
-</button>
-<div class="nav-links" class:open={open}>
 
+  <!-- burger -->
+  <button class="burger" on:click={() => open = !open}>
+    ☰
+  </button>
+
+  <!-- HOME -->
   <a href="/" class="home-link"
-  class:active={$page.url.pathname === '/'}>
+    class:active={$page.url.pathname === '/'}>
     <img src="/cross.png" alt="home" />
     <span>HOME</span>
   </a>
 
+  <!-- 🔥 MENU (TYLKO JEDNO!) -->
+  <div class="nav-links" class:open={open}>
 
-  <div class="nav-links">
     <a href="/gigs" class="nav-item"
-    class:active={$page.url.pathname === '/gigs'}>
+      class:active={$page.url.pathname === '/gigs'}>
       <span>{t.nav.gigs}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/gallery" class="nav-item"
-    class:active={$page.url.pathname === '/gallery'}>
+      class:active={$page.url.pathname === '/gallery'}>
       <span>{t.nav.gallery}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/discography" class="nav-item"
-    class:active={$page.url.pathname === '/discography'}>
+      class:active={$page.url.pathname === '/discography'}>
       <span>{t.nav.discography}</span>
       <img src="/cross.png" />
     </a>
-    
+
     <a href="/bio" class="nav-item"
-    class:active={$page.url.pathname === '/bio'}>
-          <span>{t.nav.bio}</span>
-          <img src="/cross.png" />
-        </a>
+      class:active={$page.url.pathname === '/bio'}>
+      <span>{t.nav.bio}</span>
+      <img src="/cross.png" />
+    </a>
 
     <a href="/contact" class="nav-item"
-     class:active={$page.url.pathname === '/contact'}>
+      class:active={$page.url.pathname === '/contact'}>
       <span>{t.nav.contact}</span>
       <img src="/cross.png" />
     </a>
-  </div>
-  <div class="lang-switch">
- <button 
-   on:click={() => lang.set('pl')}
-   class:active={$lang === 'pl'}
- >
-   PL
- </button>
- 
- <button 
-   on:click={() => lang.set('en')}
-   class:active={$lang === 'en'}
- >
-   EN
- </button>
- 
- <button 
-   on:click={() => lang.set('cz')}
-   class:active={$lang === 'cz'}
- >
-   CZ
- </button>
+
   </div>
 
+  <!-- 🌍 LANG (poza nav-links!) -->
+  <div class="lang-switch">
+    <button on:click={() => lang.set('pl')} class:active={$lang === 'pl'}>PL</button>
+    <button on:click={() => lang.set('en')} class:active={$lang === 'en'}>EN</button>
+    <button on:click={() => lang.set('cz')} class:active={$lang === 'cz'}>CZ</button>
+  </div>
 
 </nav>
 
@@ -107,6 +95,7 @@ nav {
 .navbar {
  position: fixed;
    top: 0;
+   height: 70px;
    width: 100%;
    background: black;
    border-bottom: 1px solid #8b0000;
@@ -114,6 +103,7 @@ nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
  
    padding: 10px 20px;
  
@@ -136,9 +126,10 @@ nav {
 
 /* MENU */
 .nav-links {
+  top: 70px;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap:
+  flex-wrap: wrap;
 }
 
 /* ITEM */
@@ -227,26 +218,38 @@ button {
   background: none;
   border: none;
   color: white;
+  position: relative;
+  z-index: 2000;
 }
 
 /* mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-
-  .burger {
+    .burger{
     display: block;
-  }
+    }
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 10px;
+
+    background: black;
+    padding: 20px;
+
+    position: fixed;   /* 🔥 KLUCZ */
+    top: 60px;         /* wysokość navbara */
+    left: 0;
+
+    z-index: 1000;
   }
 
   .nav-links.open {
     display: flex;
   }
 }
+
+
 
 
 </style>
