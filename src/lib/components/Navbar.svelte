@@ -5,9 +5,14 @@
 
   $: t = translations[$lang];
 </script>
+ let open = false;
 
 
 <nav class="navbar">
+<button class="burger" on:click={() => open = !open}>
+  ☰
+</button>
+<div class="nav-links" class:open={open}>
 
   <a href="/" class="home-link"
   class:active={$page.url.pathname === '/'}>
@@ -215,7 +220,33 @@ button {
 
 
 
+/* burger hidden desktop */
+.burger {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+}
 
+/* mobile */
+@media (max-width: 768px) {
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
 
 
 </style>
