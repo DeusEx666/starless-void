@@ -17,6 +17,7 @@
 
   <!-- HOME -->
   <a href="/" class="home-link"
+    on:click={() => open = false}
     class:active={$page.url.pathname === '/'}>
     <img src="/cross.png" alt="home" />
     <span>HOME</span>
@@ -26,30 +27,35 @@
   <div class="nav-links" class:open={open}>
 
     <a href="/gigs" class="nav-item"
+    on:click={() => open = false}
       class:active={$page.url.pathname === '/gigs'}>
       <span>{t.nav.gigs}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/gallery" class="nav-item"
+      on:click={() => open = false}
       class:active={$page.url.pathname === '/gallery'}>
       <span>{t.nav.gallery}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/discography" class="nav-item"
+      on:click={() => open = false}
       class:active={$page.url.pathname === '/discography'}>
       <span>{t.nav.discography}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/bio" class="nav-item"
+      on:click={() => open = false}
       class:active={$page.url.pathname === '/bio'}>
       <span>{t.nav.bio}</span>
       <img src="/cross.png" />
     </a>
 
     <a href="/contact" class="nav-item"
+      on:click={() => open = false}
       class:active={$page.url.pathname === '/contact'}>
       <span>{t.nav.contact}</span>
       <img src="/cross.png" />
