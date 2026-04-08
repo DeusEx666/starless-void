@@ -8,6 +8,9 @@ export const translations = {
       contact: "Kontakt",
       media: "Media"
     },
+    pages: {
+      discography: "Dyskografia",
+      gallery: "Galeria"},
     bio: {
       text: ""
     },
@@ -27,8 +30,11 @@ export const translations = {
       contact: "Contact",
       media: "Media"
     },
+    pages: {
+      discography: "Discography",
+      gallery: "Gallery"},
     bio: {
-      text: "Starless Void is a black/doom metal band from Silesia..."
+      text: ""
     },
     contact: {
       title: "Contact",
@@ -46,8 +52,11 @@ export const translations = {
       contact: "Kontakt",
       media: "Media"
     },
+    pages: {
+      discography: "Discographie",
+      gallery: "Gallerie"},
     bio: {
-      text: "Starless Void je black/doom metalová kapela ze Slezska..."
+      text: ""
     },
     contact: {
       title: "Kontakt",

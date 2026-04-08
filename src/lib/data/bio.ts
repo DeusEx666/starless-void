@@ -1,13 +1,19 @@
 export const bio = {
-    pl: "Starless Void to zespół death/doom metalowy pochodzący z Katowic na Górnym Śląsku, działający od 2022 roku. Grupa powstała z inicjatywy muzyków związanych wcześniej z różnymi projektami lokalnej sceny metalowej. Trzon zespołu stworzyli Tomasz Jedziniak (wokal), Bartłomiej Czech (gitara), Joanna Stebel (gitara basowa, wokal wspierający) oraz Andrzej Bykowski (perkusja).\n" +
+    pl: "Starless Void to zespół death/doom metalowy pochodzący z Katowic na Górnym Śląsku, działający od 2022 roku. Grupa powstała z inicjatywy muzyków związanych wcześniej z różnymi projektami lokalnej sceny metalowej.\n" +
+        "\n" +
+        "Trzon zespołu stworzyli Tomasz Jedziniak (wokal), Bartłomiej Czech (gitara), Joanna Stebel (gitara basowa, wokal wspierający) oraz Andrzej Bykowski (perkusja).\n" +
         "\n" +
         "Muzyka Starless Void łączy elementy doom metalu, death metalu oraz stoner metalu, tworząc ciężkie i mroczne brzmienie oparte na powolnych, masywnych riffach i gęstej atmosferze.\n" +
         "\n" +
-        "W sierpniu 2024 roku zespół udostępnił nagranie z próby zawierające pięć utworów, z których większość trafiła później na pierwsze wydawnictwo studyjne. 29 listopada 2024 roku ukazała się debiutancka EP zatytułowana Starless Void, wydana przez GOP Records na CD, kasecie oraz w dystrybucji cyfrowej. Materiał nagrano w studiu Lighthouse Audio w Pszowie.\n" +
+        "W sierpniu 2024 roku zespół udostępnił nagranie z próby zawierające pięć utworów, z których większość trafiła później na pierwsze wydawnictwo studyjne.\n" +
         "\n" +
-        "W 2025 roku grupa opublikowała wydawnictwo Mountain Ash Tapes, zawierające nagrania koncertowe zarejestrowane podczas występu w Siemianowicach Śląskich. W tym okresie w składzie zespołu pojawił się tymczasowo drugi gitarzysta, Krzysztof Kuziel.\n" +
+        "29 listopada 2024 roku ukazała się debiutancka EP zatytułowana \"Starless Void\", wydana przez GOP Records na CD, kasecie oraz w dystrybucji cyfrowej. Materiał nagrano w studiu Lighthouse Audio w Pszowie.\n" +
         "\n" +
-        "Na początku 2026 roku zespół powrócił do studia Lighthouse Audio w Pszowie, gdzie zarejestrował materiał na swój pierwszy album długogrający zatytułowany Mors certa, hora incerta. W trakcie nagrań do składu dołączył klawiszowiec Janusz Grzybek, poszerzając brzmienie zespołu o warstwę instrumentów klawiszowych.",
+        "W 2025 roku grupa opublikowała wydawnictwo \"Mountain Ash Tapes\", zawierające nagrania koncertowe zarejestrowane podczas występu w Siemianowicach Śląskich. W tym okresie w składzie zespołu pojawił się tymczasowo drugi gitarzysta, Krzysztof Kuziel.\n" +
+        "\n" +
+        "Na początku 2026 roku zespół powrócił do studia Lighthouse Audio w Pszowie, gdzie zarejestrował materiał na swój pierwszy album długogrający zatytułowany \"Mors certa, hora incerta\".\n" +
+        "\n" +
+        "W trakcie nagrań do składu dołączył klawiszowiec Janusz Grzybek, poszerzając brzmienie zespołu o warstwę instrumentów klawiszowych.",
     en: "Starless Void is a death/doom metal band from Katowice in Upper Silesia, Poland, formed in 2022. The group was founded by musicians previously involved in various projects within the regional metal scene. The core lineup consists of Tomasz Jedziniak (vocals), Bartłomiej Czech (guitars), Joanna Stebel (bass, backing vocals), and Andrzej Bykowski (drums).\n" +
         "\n" +
         "The band’s music combines elements of doom metal, death metal, and stoner metal, resulting in a heavy and dark sound characterized by slow, massive riffs and dense atmosphere.\n" +

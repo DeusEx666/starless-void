@@ -1,11 +1,17 @@
 <script>
   import { photos } from '$lib/data/gallery';
+   import { lang } from '$lib/stores/languageStore';
+    import { translations } from '$lib/data/translations';
+    
+      $: t = translations[$lang];
 
   let active = null;
 </script>
 
 <section class="gallery">
-  <h1>Gallery</h1>
+  <h1 class="glitch" data-text={t.pages.gallery}>
+        {t.pages.gallery}
+      </h1>
 
   <div class="grid">
     {#each photos as p}

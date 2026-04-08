@@ -1,10 +1,15 @@
 ﻿<script>
   import { albums } from '$lib/data/discography';
   import { lang } from '$lib/stores/languageStore';
+  import { translations } from '$lib/data/translations';
+  
+    $: t = translations[$lang];
 </script>
 
 <section class="discography">
-  <h1>Discography</h1>
+  <h1 class="glitch" data-text={t.pages.discography}>
+    {t.pages.discography}
+  </h1>
 
   <div class="grid">
     {#each albums as album}
